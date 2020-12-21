@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="shortcut icon" type="image/png" href="pngtree-c4d-cool-black-red-gold-three-dimensional-letter-s-decoration-png-image_4581725-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="bootstrap.js"></script>
+    <script type="text/javascript">
+
+    function insert(num) {
+      document.form.txt.value=document.form.txt.value+num
+    }
+
+    function equal() {
+      var exp=document.form.txt.value;
+      if (exp) {
+        document.form.txt.value=eval(exp)
+      }
+    }
+
+    function c() {
+      document.form.txt.value="";
+    }
+
+    </script>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="inside">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" id="textbox" >
+              <form name="form">
+                <input class="valueb" type="text" name="txt" readonly="">
+              </form>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <button class="Clear" value="C" onclick="c()">C</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="/" onclick="insert('/')">/</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3" >
+              <button class="C" value="*" onclick="insert('*')">*</button>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12" id="space">
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="7" onclick="insert(7)">7</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="8" onclick="insert(8)">8</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="9" onclick="insert(9)">9</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3" >
+              <button class="C" value="-" onclick="insert('-')">-</button>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12" id="space">
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="4" onclick="insert(4)">4</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="5" onclick="insert(5)">5</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="6" onclick="insert(6)">6</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="+" onclick="insert('+')">+</button>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12" id="space">
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="3" onclick="insert(3)">3</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="2" onclick="insert(2)">2</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="1" onclick="insert(1)">1</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="%" onclick="insert('%')">%</button>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12" id="space">
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="0" onclick="insert(0)">0</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <button class="C" value="." onclick="insert('.')">.</button>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <button class="equal" onclick="equal()">=</button>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+
+  </body>
+</html>
