@@ -75,9 +75,10 @@ body{
   background-color: transparent;
   border-radius: 10px;
   height: 70px;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   transition: .5s;
+  font-weight: bolder;
 }
 
 .C:hover{
