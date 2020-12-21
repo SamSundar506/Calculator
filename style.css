@@ -1,0 +1,109 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(wallpaperbetter.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 700px;
+  margin: auto;
+  height: 600px;
+  min-height: 100vh;
+}
+
+.inside{
+  width: 800px;
+  border: 10px solid white;
+  border-radius: 10px;
+  height: 600px;
+  transition: 1.5s;
+}
+
+.valueb{
+  height: 60px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 40px;
+  font-size: 30px;
+  text-align: right;
+}
+
+.inside:hover
+{
+  box-shadow: 0 5px 50px 0 #fff, 0 5px 50px 0 #fff;
+}
+
+#textbox{
+  height: 100px;
+}
+
+
+.Clear{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 70px;
+  background-color: #ff3077;
+  color: white;
+  font-size: 30px;
+  transition: .5s;
+}
+
+.Clear:hover{
+  color: #ff3077;
+  background-color: white;
+  box-shadow: 1px 1px 24px 5px #ff3077;
+
+}
+
+.C{
+  width: 100%;
+  border: 5px solid white;
+  background-color: transparent;
+  border-radius: 10px;
+  height: 70px;
+  font-size: 20px;
+  color: white;
+  transition: .5s;
+}
+
+.C:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 24px 5px white;
+}
+
+
+#space{
+  height: 30px;
+}
+
+.equal{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 70px;
+  background-color: deepskyblue;
+  color: white;
+  font-size: 30px;
+  transition: .5s;
+}
+
+.equal:hover{
+  color: deepskyblue;
+  background-color: white;
+  box-shadow: 1px 1px 24px 5px deepskyblue;
+}
